@@ -119,11 +119,31 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  const classes = ['countries', 'brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
   });
+
+  const navCountries = nav.querySelector('.nav-countries');
+  if (navCountries) {
+    const wrapper = navCountries.children[0];
+    const countryButton = document.createElement('button');
+    countryButton.type = 'button';
+    countryButton.textContent = 'Change Language';
+    countryButton.addEventListener('click', (event) => {
+      const countryListEl = event.currentTarget.parentElement.querySelector('ul');
+      countryListEl.style.display = 'block';
+    });
+
+    const countryList = document.createElement('div');
+    countryList.classList.add('country-list-wrapper');
+    countryList.appendChild(countryButton);
+    countryList.appendChild(wrapper.querySelector('ul'));
+
+    wrapper.appendChild(countryList);
+
+  }
 
   const navBrand = nav.querySelector('.nav-brand');
   const brandLink = navBrand.querySelector('.button');
