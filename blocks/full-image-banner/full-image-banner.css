@@ -46,12 +46,16 @@ main>.full-image-banner-container>div {
     object-fit: cover;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
+    .full-image-banner {
+        margin-bottom: 1rem;
+    }
     .full-image-banner-image {
         height: auto;
     }
     .foreground-content-box {
         width:  auto;
+        min-width: 50%;
         position: absolute;
         left: 70%;
         top: 50%;
@@ -59,6 +63,12 @@ main>.full-image-banner-container>div {
     }
     .foreground-content-box__content {
         padding: 1rem 3rem;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .foreground-content-box {
+        min-width: auto;
     }
 }
 

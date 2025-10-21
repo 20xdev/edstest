@@ -1,15 +1,39 @@
+main .cards-container.highlight {
+    background-color: var(--section-bg);
+}
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
 }
 
+@media screen and (min-width: 48rem) {
+  .cards > ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 72rem) {
+    .cards > ul {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    background-color: var(--background-color);
+}
+
+.cards > ul > li:hover {
+    background-color: var(--accent-color);
+    color: var( --light-color);
+}
+
+.cards > ul > li:hover a {
+    color: var( --light-color);
 }
 
 .cards .cards-card-body {
