@@ -18,6 +18,7 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --accent-color: #f00;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -75,6 +76,14 @@
   }
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
   display: none;
   margin: 0;
@@ -83,6 +92,7 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
+  box-sizing: border-box;
 }
 
 body.appear {
