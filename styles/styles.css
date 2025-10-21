@@ -16,26 +16,27 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
+  --link-color: #d02930;
   --link-hover-color: #1d3ecf;
   --accent-color: #f00;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
+  --body-font-family: "Public Sans", sans-serif;;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+   /* body sizes */
+   --body-font-size-m: 18px;
+   --body-font-size-s: 16px;
+   --body-font-size-xs: 14px;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+   /* heading sizes */
+   --heading-font-size-xxl: 45px;
+   --heading-font-size-xl: 36px;
+   --heading-font-size-l: 28px;
+   --heading-font-size-m: 22px;
+   --heading-font-size-s: 20px;
+   --heading-font-size-xs: 18px;
+ 
 
   /* nav height */
   --nav-height: 64px;
@@ -61,18 +62,18 @@
 
 @media (width >= 900px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+     /* body sizes */
+  --body-font-size-m: 22px;
+  --body-font-size-s: 19px;
+  --body-font-size-xs: 16px;
 
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+  /* heading sizes */
+  --heading-font-size-xxl: 55px;
+  --heading-font-size-xl: 44px;
+  --heading-font-size-l: 34px;
+  --heading-font-size-m: 27px;
+  --heading-font-size-s: 24px;
+  --heading-font-size-xs: 22px;
   }
 }
 
@@ -121,7 +122,7 @@ h5,
 h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
+  font-family: var(--body-font-family);
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
@@ -188,7 +189,7 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: 0.3em;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;

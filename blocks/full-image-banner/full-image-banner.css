@@ -10,20 +10,24 @@ main>.full-image-banner-container>div {
     position: relative;
     width: 100%;
     flex-direction: column;
+    margin-bottom: 10rem;
 }
 
 .full-image-banner-image {
     /* grid-column: 1 / -1;
     grid-row: 1 / -1; */
+    height: 20rem;
+    min-height: 20rem;
 }
 
 .foreground-content-box {
     /* grid-column: 1 / -1;
     grid-row: 1 / -1; */
-    max-width: 80%;
-    position: relative;
-    margin: 0 auto;
-    transform: translateY(-30%);
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 7%);
 }
 
 .foreground-content-box__content {
@@ -42,11 +46,19 @@ main>.full-image-banner-container>div {
     object-fit: cover;
 }
 
-@media (min-width: 768px) {
-    .foreground-content-box__content {
+@media screen and (min-width: 768px) {
+    .full-image-banner-image {
+        height: auto;
+    }
+    .foreground-content-box {
+        width:  auto;
+        position: absolute;
         left: 70%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+    .foreground-content-box__content {
+        padding: 1rem 3rem;
     }
 }
 
