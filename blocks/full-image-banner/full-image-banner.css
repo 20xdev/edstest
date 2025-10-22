@@ -30,7 +30,7 @@ main>.full-image-banner-container>div {
     transform: translate(-50%, 7%);
 }
 
-.foreground-content-box__content {
+.foreground-content-box-content {
     background: var(--background-color);
     padding: 5px 1rem;
     border-radius: 3px;
@@ -46,13 +46,15 @@ main>.full-image-banner-container>div {
     object-fit: cover;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (width >= 48rem) {
     .full-image-banner {
         margin-bottom: 1rem;
     }
+
     .full-image-banner-image {
         height: auto;
     }
+
     .foreground-content-box {
         width:  auto;
         min-width: 50%;
@@ -61,12 +63,13 @@ main>.full-image-banner-container>div {
         top: 50%;
         transform: translate(-50%, -50%);
     }
-    .foreground-content-box__content {
+
+    .foreground-content-box-content {
         padding: 1rem 3rem;
     }
 }
 
-@media screen and (min-width: 80rem) {
+@media screen and (width >= 80rem) {
     .foreground-content-box {
         min-width: auto;
     }

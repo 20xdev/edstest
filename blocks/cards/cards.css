@@ -1,6 +1,7 @@
 main .cards-container.highlight {
     background-color: var(--section-bg);
 }
+
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -10,13 +11,13 @@ main .cards-container.highlight {
   gap: 2rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (width >= 48rem) {
   .cards > ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media screen and (min-width: 72rem) {
+@media screen and (width >= 72rem) {
     .cards > ul {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }

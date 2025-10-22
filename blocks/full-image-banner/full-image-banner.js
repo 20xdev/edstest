@@ -11,7 +11,7 @@ function createForegroundContentBox(elm) {
   const foregroundContentBox = document.createElement('div');
   foregroundContentBox.className = 'foreground-content-box';
   foregroundContentBox.appendChild(elm);
-  elm.querySelector(':scope > div').classList.add('foreground-content-box__content');
+  elm.querySelector(':scope > div').classList.add('foreground-content-box-content');
   return foregroundContentBox;
 }
 

@@ -44,7 +44,6 @@
 
   /* countries bar height */
   --countries-bar-height: 20px;
-
   --header-height: 84px;
 }
 
@@ -82,7 +81,7 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
     box-sizing: inherit;
 }
 
